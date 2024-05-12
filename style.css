@@ -9,16 +9,39 @@ body{
   width: 99.5vw;
   height: 7vh;
   min-width: 1000px;
+  z-index: 1;
+}
+.hamburger{
+  padding: 15px;
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.menu{
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  width: 4vw;
+  height: 89vh;
+  opacity: .5;
+  z-index: 2;
+}
+.menu-hidden{
+  visibility: hidden;
+  position: fixed;
+  background-color: gray;
+  border: 1px solid red;
+  z-index: 2;
 }
 .container{
   width: 99.5vw;
-  height: 92vh;
+  height: 89vh;
   background-color: rgb(76, 76, 76);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   min-width: 1000px;
+  z-index: 0;
 
 }
 .pop-up{
@@ -55,5 +78,18 @@ body{
   object-fit: cover;
   object-position: right;
   border: 1px solid red;
+}
+.footer{
+  background-color: rgb(160, 160, 160);
+  width: 99.5vw;
+  height: 3vh;
+  min-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer>p{
+  margin: 0;
+  padding: 0;
 }
 
